@@ -15,3 +15,9 @@
 
 6. Selezionare tutti i corsi di laurea magistrale
   SELECT * FROM `degrees` WHERE `name` LIKE '%magistrale%'
+
+7. Da quanti dipartimenit é composta l'universita
+  SELECT COUNT(*) FROM `departments`
+
+8. Quanti sono gli insegnanti che non  hanno un numero di telefono
+  
