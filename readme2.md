@@ -19,3 +19,10 @@
   INNER JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
   INNER JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
   WHERE `teachers`.`name` = 'Fulvio' AND `teachers`.`surname` = 'Amato'
+
+4. Selezionare tutti gli studenti con i dati relativi al corso di laure a cui sono iscritti e il relativo dipartimento, in ordine per cognome e nome
+  SELECT * 
+  FROM `students`
+  INNER JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id`
+  INNER JOIN `departments` ON `degrees`.`department_id` = `departments`.`id`
+  ORDER BY `students`.`surname` DESC
